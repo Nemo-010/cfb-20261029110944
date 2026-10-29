@@ -1,0 +1,14 @@
+[package]
+name = "cfb-agent"
+version = "0.1.0"
+edition = "2021"
+license = "0BSD"
+description = "cfb single-binary host agent: tunnel, broker, monitor, supervisor"
+
+# Dependency-light by design (std only) so the scaffold builds and tests
+# anywhere; tokio/serde/etc land with the first real I/O implementation.
+[dependencies]
+
+[profile.release]
+strip = true
+lto = true

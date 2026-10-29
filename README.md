@@ -16,8 +16,9 @@ All GitHub numbers verified via the API 2026-10-29. License: 0BSD.
 | File | Content |
 |---|---|
 | [SPEC.md](SPEC.md) | Architecture: portability contract, agent spec, control plane, security |
-| [catalog/](catalog/) | Verified tool catalogs (8 files) |
+| [catalog/](catalog/) | Verified tool catalogs (9 files) |
 | [CRITIQUE.md](CRITIQUE.md) | Rejected alternatives, known gaps |
+| [agent/](agent/) | `cfb-agent` Rust crate — the §4 single-binary agent, scaffold with tests |
 
 ## Stack
 
