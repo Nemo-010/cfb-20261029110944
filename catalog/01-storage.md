@@ -41,7 +41,8 @@ therefore does not need full AWS conformance to be "R2-equivalent".
   R2-plus-AWS semantics and can afford the ops.
 - Integration: expose path-style S3 over cloudflared with Access
   service tokens; big-object paths over the Headscale overlay (tunnel
-  upload caps unverified — see SPEC §9). Native R2 bindings cannot
+  upload caps: proxied body limits 100/200/500 MB by plan — bulk data
+  on the overlay per SPEC §3.2). Native R2 bindings cannot
   target these stores; use an S3 client (aws4fetch) from the CF side.
 - Local dev: Miniflare (now inside cloudflare/workers-sdk, the
   standalone repo is archived) emulates R2 for the SPA's dev loop.

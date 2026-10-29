@@ -39,7 +39,7 @@ ports and is provisioned by the CF API itself (tunnel creation from the
 API Worker). Replace it only if Cloudflare-as-transport becomes the
 risk: then Pangolin (tunnel + identity + dashboard, self-hosted) or
 frp + Authelia. The spec keeps that swap behind one abstraction
-(SPEC §7, last row).
+(SPEC §8, CF-pricing row).
 
 ## Orchestration layer
 
@@ -57,7 +57,7 @@ the documented fallback if container orchestration beyond celld's cells
 is genuinely needed, but Nomad is BUSL-1.1 since the HashiCorp license
 change and adds a control plane the SPA would then have to front.
 Machine provisioning (hypervisor-level) is left to existing tooling on
-site (Proxmox/Incus); the spec's onboarding flow (SPEC §5) consumes
+site (Proxmox/Incus); the onboarding flow (SPEC §7) consumes
 whatever a site has.
 
 ## Sources
